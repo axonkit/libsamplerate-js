@@ -12,7 +12,11 @@
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     },
-    "./wasm-runtime": "./dist/wasm-runtime.mjs",
+    "./wasm-runtime": {
+      "types": "./dist/wasm-runtime.d.ts",
+      "import": "./dist/wasm-runtime.mjs",
+      "require": "./dist/wasm-runtime.cjs"
+    },
     "./wasm/*": "./dist/wasm/*"
   },
   "files": [
